@@ -1,0 +1,305 @@
+body {
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  background-color:  #06213f;
+  color: #6C6D6E;
+ }
+
+.logo img {
+ width: 200px;
+height: 200px;
+}
+
+
+.icon > img {
+  display: block;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+ }
+
+
+p {
+  line-height: 1.8;
+}
+
+.cat-page-container {
+   max-width: 700px;
+   width: 100%;  
+}
+
+.cat-section {
+  margin-bottom: 100px;
+  position: relative;
+}
+
+/*navigation*/
+
+.cat-nav {
+    border-bottom: 0.1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+
+.cat-menu {
+    margin: 0  0  0 20px   ;
+}
+
+
+.cat-menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 15px;
+}
+
+
+.label-nav {
+    margin: 0 40px 0 0;
+    font-size: 40px;
+    line-height: 0px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+
+
+#toggle {
+    display: none;
+}
+
+
+  a:hover{
+  background-color: rgb(213, 221, 228);
+ }
+
+
+/**contenus*/
+.cat-content-container {      
+  border-radius: 20px;
+  background-color: white;
+}
+
+.cat-header {
+  padding: 65px 15px;
+}
+
+.cat-content {  
+  padding-left: 55px;
+  padding-right: 55px;
+  padding-top: 20px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.cat-title {
+  font-size: 2.5rem;
+  color:  #999A9B;
+}
+
+.cat-page-title {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  margin-top: 20px;
+  color: #656667;
+}
+
+.credi-source > p {
+  font-size: 2px;
+  margin-bottom: 10px;
+  
+  color: #656667;
+}
+
+.cat-img {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;  
+}
+
+footer {
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 50px;
+  color: #9A9B9C;
+}
+
+/* cacher puce li dans footer */
+      
+li{
+  list-style-type: none;
+
+}
+
+.cat-footer-link {
+  color: #9A9B9C;
+}
+
+/*  pour events */
+
+.text-element {
+  padding: 10px 0;
+  margin-top: 20px;
+}
+.cat-gallery {
+  display: none;
+ vertical-align: auto;
+}
+
+.cat-text{
+  text-overflow: ellipsis;
+  
+}
+
+
+.float-right {
+  display: inline-block ;
+ vertical-align: bottom ;
+}
+
+/* pour style voile sombre dans  image > contact */
+
+.cat-img-overlay-wrap {
+position: relative;
+min-height: 280px;
+background-image: url(/galleryImg/sans.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+}
+
+.cat-img-overlay {
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+background-color:  rgba(0,0,0,0.5);
+}
+
+.cat-img-overlay-text {
+position: relative;
+}
+
+/* formulaire */
+.cat-contact-form {
+max-width: 380px;
+}
+
+.btn {
+font-size: 1.1rem;
+padding: 10px 35px;
+border: none;
+}
+
+.btn-primary {
+background-color: #9999CC;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+background-color: #9a9afc;
+}
+
+.cat-small {
+  font-size: 90%;
+}
+
+.paypal-logo:hover{
+  background-color: #9a9afc;
+}
+
+/*video youtube* responsive*/
+
+.small{
+	position: relative;
+	padding-bottom: 50%; 
+	padding-top: 50px;
+	height: 0;
+	overflow: hidden;
+}
+
+.small iframe,  
+.small object,  
+.small embed {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+
+/*media query qui fait apparaître les images  à partir de 741 px dans la page événements  */
+
+@media screen and (min-width: 740px) {
+  .list {
+    list-style-type: none; 
+    margin: 15px 0;
+  }
+  
+  .cat-gallery{
+    display: flex;
+  }
+
+  .text-element {
+    display: none;
+  }
+
+  li:hover {
+    cursor: pointer;
+  }
+
+  .title {
+    padding: 0 10px;
+  }
+
+  
+  .cat-gallery ul li {
+    display: none;
+  }
+}
+
+
+/*media query navigation qui affiche  par defaut  le bouton toggle  quand l'écran est en dessous de 500px*/
+
+@media only screen and (max-width:500px) {
+  .label-nav  {
+    display: inline;
+    cursor: pointer;
+  }
+  .cat-menu{
+      text-align: center;
+      width: 50%;
+      display: none;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+  .cat-menu a {
+      display: flex;
+    
+      margin: 5px;
+   
+  }
+  #toggle:checked + .cat-menu {
+      display: flex;
+  }
+  
+  .cat-nav {text-align: left;
+      height: 30px;
+      line-height: 0px;
+  }
+}
+
